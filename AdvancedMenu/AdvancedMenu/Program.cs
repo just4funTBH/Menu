@@ -10,6 +10,8 @@ namespace AdvancedMenu
     {
         static void Main(string[] args)
         {
+            DisplayMenu();
+            ExecuteMenu();
         }
         static void DisplayMenu()
         {
@@ -28,10 +30,22 @@ namespace AdvancedMenu
                 switch(c)
                 {
                     case '1':
-                        Console.WriteLine("Sie haben die erste Aufgabe gewählt!");
+                        int age = 0;
+
+                        Console.WriteLine("\nSie haben die erste Aufgabe gewählt!");
+                        Console.WriteLine("Geben Sie ihr alter an");
+                        while (int.TryParse(Console.ReadLine(), out age))
+                        Casino(age);
                         break;
                     case '2':
-                        Console.WriteLine("Sie haben die zweite Aufgabe gewählt!");
+                        Console.WriteLine("\nSie haben die zweite Aufgabe gewählt!");
+                        Console.WriteLine("Geben Sie ihren Code an");
+                        string compare = Console.ReadLine();
+                        if (Code(compare) == true)
+                        {
+                            DisplaySecondMenu();
+                            ExecuteSecondMenu();
+                        }
                         break;
                     case 'q':
                         Console.WriteLine("Auf wiedersehen");
@@ -74,11 +88,8 @@ namespace AdvancedMenu
                 Console.ReadLine();
             }
         }
-        static bool Code()
+        static bool Code(string compare)
         {
-            Console.WriteLine("Geben Sie ihren Code an");
-            string compare = Console.ReadLine();
-
             if(compare == "1234")
             {
                 return true;
@@ -104,14 +115,23 @@ namespace AdvancedMenu
             while (true)
             {
                 char c = Console.ReadKey().KeyChar;
+                int kontostand = 4200;
 
                 switch (c)
                 {
                     case '1':
-                        Console.WriteLine("");
+                        Console.WriteLine("Ihr aktueller Kontostand beträgt: " + ShowBalance(kontostand) + " €");
                         break;
                     case '2':
-                        Console.WriteLine("");
+                        int betrag = 0;
+
+                        Console.WriteLine("Wie viel Geld wollen Sie abheben?");
+                        while (!int.TryParse(Console.ReadLine(), out betrag))
+                        {
+                            Console.WriteLine("Ungültige Angabe!");
+                        }
+                        double newKontostand = Withdraw(kontostand, betrag);
+                        Console.WriteLine("Ihr neuer Kontostand beträgt: " + newKontostand + " €");
                         break;
                     case '3':
                         Console.WriteLine("Vorgang wurde abgebrochen!");
@@ -127,9 +147,9 @@ namespace AdvancedMenu
                 Console.Clear();
             }
         }
-        static void ShowBalance(double kontostand)
+        static double ShowBalance(double kontostand)
         {
-            Console.WriteLine(kontostand);
+            return kontostand;
         }
         static double Withdraw(double kontostand, double betrag)
         {
