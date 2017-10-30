@@ -1,0 +1,5 @@
+C:\Users\Stefan\Documents\GitHub\Menu\thinking\thinking\bin\Debug\thinking.exe.config
+C:\Users\Stefan\Documents\GitHub\Menu\thinking\thinking\bin\Debug\thinking.exe
+C:\Users\Stefan\Documents\GitHub\Menu\thinking\thinking\bin\Debug\thinking.pdb
+C:\Users\Stefan\Documents\GitHub\Menu\thinking\thinking\obj\Debug\thinking.exe
+C:\Users\Stefan\Documents\GitHub\Menu\thinking\thinking\obj\Debug\thinking.pdb
