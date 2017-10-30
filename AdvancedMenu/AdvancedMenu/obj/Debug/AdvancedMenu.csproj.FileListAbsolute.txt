@@ -1,1 +1,6 @@
 C:\Users\Stefan\Documents\GitHub\Menu\AdvancedMenu\AdvancedMenu\bin\Debug\AdvancedMenu.exe.config
+C:\Users\Stefan\Documents\GitHub\Menu\AdvancedMenu\AdvancedMenu\bin\Debug\AdvancedMenu.exe
+C:\Users\Stefan\Documents\GitHub\Menu\AdvancedMenu\AdvancedMenu\bin\Debug\AdvancedMenu.pdb
+C:\Users\Stefan\Documents\GitHub\Menu\AdvancedMenu\AdvancedMenu\obj\Debug\AdvancedMenu.csprojResolveAssemblyReference.cache
+C:\Users\Stefan\Documents\GitHub\Menu\AdvancedMenu\AdvancedMenu\obj\Debug\AdvancedMenu.exe
+C:\Users\Stefan\Documents\GitHub\Menu\AdvancedMenu\AdvancedMenu\obj\Debug\AdvancedMenu.pdb
